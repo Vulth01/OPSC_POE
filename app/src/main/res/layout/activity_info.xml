@@ -63,12 +63,25 @@
 
     <TextView
         android:id="@+id/txtInfoHeader"
-        android:layout_width="40dp"
+        android:layout_width="100dp"
         android:layout_height="20dp"
         android:translationX="0dp"
-        android:translationY="-650dp"
+        android:translationY="-600dp"
         android:visibility="visible"
-        android:text="INFO"
+        android:text="INFORMATION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/txtInfoBody"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:translationX="0dp"
+        android:translationY="-300dp"
+        android:visibility="visible"
+        android:text="Profile - Log In / Sign Up "
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

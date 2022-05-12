@@ -67,7 +67,7 @@
         android:layout_width="60dp"
         android:layout_height="20dp"
         android:translationX="0dp"
-        android:translationY="-650dp"
+        android:translationY="-600dp"
         android:visibility="visible"
         android:text="PROFILE"
         app:layout_constraintBottom_toBottomOf="parent"
