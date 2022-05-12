@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/damie/AndroidStudioProjects/OPSC_POE/app/src/main/res/layout/activity_gallery.xml" value="0.22083333333333333" />
+        <entry key="..\:/Users/damie/AndroidStudioProjects/OPSC_POE/app/src/main/res/layout/activity_info.xml" value="0.1" />
         <entry key="..\:/Users/damie/AndroidStudioProjects/OPSC_POE/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/damie/AndroidStudioProjects/OPSC_POE/app/src/main/res/layout/activity_profile.xml" value="0.14130434782608695" />
+        <entry key="..\:/Users/damie/AndroidStudioProjects/OPSC_POE/app/src/main/res/layout/activity_settings.xml" value="0.24547101449275363" />
       </map>
     </option>
   </component>
