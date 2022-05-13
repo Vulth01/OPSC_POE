@@ -81,7 +81,14 @@
         android:translationX="0dp"
         android:translationY="-300dp"
         android:visibility="visible"
-        android:text="Profile - Log In / Sign Up "
+
+        android:text=" Profile - Log In / Sign Up \n Please try to log in with these details:
+            \n
+            \n Username: Username1
+            \n Password: Password1
+            \n
+            \n Default Goal: 6"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

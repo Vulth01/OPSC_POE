@@ -1,15 +1,23 @@
 package com.example.opsc_poe;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
+import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class GalleryActivity extends AppCompatActivity {
 
+    int translationY = 1200, translationX = -200, btnNum = 0, goal = 6;
+    EditText edtGoal, edtNewDescription, edtNewName;
+    Items[] items;
     ImageButton btn_Gallery, btn_Settings, btn_Profile, btn_Home, btn_Info;
 
     @Override
@@ -64,5 +72,14 @@ public class GalleryActivity extends AppCompatActivity {
                 startActivity(intentProfile);
             }
         });
+
+        Log.d("One", "START");
+
+
+    }
+
+    public void onClick(View view) {
+        Intent intentProfile = new Intent(GalleryActivity.this, CategoryActivity.class);
+        startActivity(intentProfile);
     }
 }
