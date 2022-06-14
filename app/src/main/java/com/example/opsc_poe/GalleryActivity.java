@@ -15,6 +15,8 @@ import android.widget.Toast;
 
 public class GalleryActivity extends AppCompatActivity {
 
+    //DoThing();
+
     int translationY = 1200, translationX = -200, btnNum = 0, goal = 6;
     EditText edtGoal, edtNewDescription, edtNewName;
     Items[] items;
@@ -74,8 +76,6 @@ public class GalleryActivity extends AppCompatActivity {
         });
 
         Log.d("One", "START");
-
-
     }
 
     public void onClick(View view) {
