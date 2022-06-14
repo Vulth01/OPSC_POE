@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class GalleryActivity extends AppCompatActivity {
-
+    //test
     int translationY = 1200, translationX = -200, btnNum = 0, goal = 6;
     EditText edtGoal, edtNewDescription, edtNewName;
     Items[] items;
