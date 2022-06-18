@@ -10,6 +10,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ public class ItemsActivity extends AppCompatActivity {
     public static final int CAMERA_ACTION_CODE = 1;
     ImageView imageProfile;
     Button takePhoto;
+    ImageButton btn_Gallery;
 
     ImageView imageView7;
     @Override
@@ -32,6 +34,16 @@ public class ItemsActivity extends AppCompatActivity {
         edtDescription = findViewById(R.id.txtDescription);
         edtDate = findViewById(R.id.txtDate);
         imageView7 = findViewById(R.id.imageView7);
+
+        btn_Gallery = findViewById(R.id.btn_Gallery);
+        btn_Gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(ItemsActivity.this, "btn_Gallery Pressed", Toast.LENGTH_SHORT).show();
+                Intent intentProfile = new Intent(ItemsActivity.this, GalleryActivity.class);
+                startActivity(intentProfile);
+            }
+        });
 
     }
 

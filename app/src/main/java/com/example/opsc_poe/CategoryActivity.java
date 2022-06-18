@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -31,6 +32,9 @@ public class CategoryActivity extends AppCompatActivity {
     int translationY = 1200, translationX = -200, btnNum = 0, goal = 6;
     EditText edtGoal, edtNewDescription, edtNewName;
     Items[] items;
+    ImageButton btn_Gallery;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,7 +50,15 @@ public class CategoryActivity extends AppCompatActivity {
         edtNewDescription = findViewById(R.id.edtNewDescription);
         edtNewName = findViewById(R.id.edtNewName);
 
-
+        btn_Gallery = findViewById(R.id.btn_Gallery);
+        btn_Gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(CategoryActivity.this, "btn_Gallery Pressed", Toast.LENGTH_SHORT).show();
+                Intent intentProfile = new Intent(CategoryActivity.this, GalleryActivity.class);
+                startActivity(intentProfile);
+            }
+        });
     }
 
     public void onClick(View view)

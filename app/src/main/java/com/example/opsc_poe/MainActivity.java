@@ -11,8 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton btn_Gallery, btn_Settings, btn_Profile, btn_Home, btn_Info;
-
+    ImageButton btn_Gallery, btn_Settings, btn_Home, btn_Info, btn_Profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

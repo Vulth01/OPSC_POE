@@ -63,73 +63,73 @@
 
 
 
-    <ImageButton
-        android:id="@+id/btn_Home"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:translationX="0dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/btn_Home"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:translationX="0dp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:srcCompat="@android:drawable/ic_dialog_dialer" />-->
 
-    <ImageButton
-        android:id="@+id/btn_Settings"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:translationX="160dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_manage" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/btn_Settings"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:translationX="160dp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_manage" />-->
 
-    <ImageButton
-        android:id="@+id/btn_Profile"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:translationX="-80dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/btn_Profile"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:translationX="-80dp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_myplaces" />-->
 
-    <ImageButton
-        android:id="@+id/btn_Info"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:translationX="80dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/btn_Info"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:translationX="80dp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_info_details" />-->
 
-    <ImageButton
-        android:id="@+id/btn_Gallery"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:translationX="-160dp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_gallery" />
+<!--    <ImageButton-->
+<!--        android:id="@+id/btn_Gallery"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:translationX="-160dp"-->
+<!--        android:visibility="visible"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_gallery" />-->
 
-    <TextView
-        android:id="@+id/txtProfileHeader"
-        android:layout_width="60dp"
-        android:layout_height="20dp"
-        android:translationX="0dp"
-        android:translationY="-600dp"
-        android:visibility="visible"
-        android:text="PROFILE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/txtProfileHeader"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:translationX="0dp"-->
+<!--        android:translationY="-600dp"-->
+<!--        android:visibility="visible"-->
+<!--        android:text="PROFILE"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        />-->
 
 
 
