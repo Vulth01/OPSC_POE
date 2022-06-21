@@ -23,8 +23,8 @@ public class ItemsActivity extends AppCompatActivity {
     ImageView imageProfile;
     Button takePhoto;
     ImageButton btn_Gallery;
-
     ImageView imageView7;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,8 +46,6 @@ public class ItemsActivity extends AppCompatActivity {
         });
 
     }
-
-
 
     public void onPhotoTaken(View view) {
 
@@ -77,5 +75,4 @@ public class ItemsActivity extends AppCompatActivity {
             imageView7.setImageBitmap(finalPhoto);
         }
     }
-
 }

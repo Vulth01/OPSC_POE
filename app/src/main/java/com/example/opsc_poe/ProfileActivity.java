@@ -31,7 +31,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     FirebaseAuth fAuth;
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference dbRef;
+    //DatabaseReference dbRef;
     boolean userFlag, passFlag;
     int details;
 

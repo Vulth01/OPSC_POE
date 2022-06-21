@@ -34,9 +34,7 @@ public class GalleryActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
 
         AddListeners();
-        CreateCategory();
-
-        //Log.d("One", "START");
+        //CreateCategory();
     }
 
     public void onClick(View view) {

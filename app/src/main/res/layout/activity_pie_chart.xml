@@ -7,12 +7,37 @@
     android:padding="10dp"
     tools:context=".PieChartActivity">
 
-    <com.github.mikephil.charting.charts.PieChart
-        android:id = "@+id/pieChart"
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
 
-        android:layout_width = "match_parent"
-        android:layout_height = "match_parent"
-        tools:ignore = "MissingClass"
-        />
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingClass"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="3dp">
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <ImageButton
+        android:id="@+id/btn_Home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:translationX="0dp"
+        android:translationY="320dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
