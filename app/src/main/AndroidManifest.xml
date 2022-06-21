@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OPSC_POE">
         <activity
+            android:name=".PieChartActivity"
+            android:exported="false"
+            android:label="@string/title_activity_pie_chart"
+            android:theme="@style/Theme.OPSC_POE.NoActionBar" />
+        <activity
             android:name=".ItemsActivity"
             android:exported="false" />
         <activity
@@ -23,7 +28,7 @@
             android:exported="false" />
         <activity
             android:name=".ProfileActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,8 +40,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>

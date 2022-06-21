@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,18 +22,11 @@ import java.util.List;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    //Button btnAddItems;
-    //EditText edtGoal;
-    //ImageView imgView1, imgView2, imgView3, imgView4, imgView5, imgView6;
-    //Category category = new Category();
-    //ImageView[] imageViews;
-    //int imgIndex = 0;
-    //Image image;
-
-    int translationY = 1200, translationX = -200, btnNum = 0, goal = 6;
+    int translationY = 1260, translationX = -200, btnNum = 0, goal = 6;
     EditText edtGoal, edtNewDescription, edtNewName;
     Items[] items;
     ImageButton btn_Gallery;
+    ProgressBar progressBar;
 
 
 
@@ -45,6 +39,7 @@ public class CategoryActivity extends AppCompatActivity {
         edtGoal.setText("9");
         goal = Integer.parseInt(edtGoal.getText().toString());
         items = new Items[goal];
+        progressBar = findViewById(R.id.progressBar);
 
 
         edtNewDescription = findViewById(R.id.edtNewDescription);
@@ -63,8 +58,10 @@ public class CategoryActivity extends AppCompatActivity {
 
     public void onClick(View view)
     {
+
         if (btnNum < goal){
 
+            progressBar.incrementProgressBy(100/goal);
             ConstraintLayout constraintLayout;
             constraintLayout = findViewById(R.id.activityCategory);
 
@@ -101,80 +98,7 @@ public class CategoryActivity extends AppCompatActivity {
         }
         else{
             Toast.makeText(CategoryActivity.this, "Goal Reached!", Toast.LENGTH_SHORT).show();
-
         }
     }
 
 }
-
-
-
-
-
-
-
-
-
-/*
-
-        goal = Integer.parseInt(edtGoal.getText().toString());
-
-        imgView1.findViewById(R.id.imageView1);
-        btnAddItems.findViewById(R.id.btnAddItems);
-        imageViews = new ImageView[goal];
-
-        btnAddItems.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-
-            }
-        });
-
-
-
-
-
-        LayoutInflater myInflater = getLayoutInflater();
-        View newView = myInflater.inflate(R.layout.activity_category, null);
-
-        EditText etName = (EditText) newView.findViewById(R.id.editTextTextPersonName);
-        etName.setText("Hello!");
-
-        //Display layout permanently
-        LinearLayout newLayout = findViewById(R.id.linearlayout);
-        newLayout.addView(newView);
-
-        imgView1.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                ImageView img = new ImageView(CategoryActivity.this); //put activity name here
-                //imageViews[imgIndex] = img;
-                //imgIndex++;
-                Toast.makeText(CategoryActivity.this, "brr", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-
-        List<Items> items = null;
-
-        category.CatItems = new Items[5];
-
-        for (int i = 0; i < category.CatItems.length; i++){
-            category.CatItems[i].Name = "";
-            category.CatItems[i].ItemImage = image;
-        }
-
-
-        imgView1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(CategoryActivity.this, "btn_Gallery Pressed", Toast.LENGTH_SHORT).show();
-                Intent intentProfile = new Intent(CategoryActivity.this, ItemsActivity.class);
-                startActivity(intentProfile);
-            }
-        });
-*/

@@ -76,22 +76,33 @@
 
     <TextView
         android:id="@+id/txtInfoBody"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="260dp"
+        android:layout_height="400dp"
         android:translationX="0dp"
-        android:translationY="-300dp"
+        android:translationY="0dp"
         android:visibility="visible"
 
-        android:text=" Profile - Log In / Sign Up \n Please try to log in with these details:
+        android:text =
+            "
+            \n                      App Developers:
             \n
-            \n Username: Username1
-            \n Password: Password1
+            \n  Damien Harwood
+            \n  Tristan Jamieson
+            \n  Liliya Panina
+            \n  Teilo Chetty
+            \n                      App Purpose:
             \n
-            \n Default Goal: 6"
+            \n  To allow you to store data and track progress.
+            \n
+            \n
+            \n
+            \n
+            \n  Default Goal: 6"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

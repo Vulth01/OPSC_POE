@@ -11,17 +11,30 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton btn_Gallery, btn_Settings, btn_Home, btn_Info, btn_Profile;
+    ImageButton btn_Gallery, btn_Settings, btn_Home, btn_Info, btn_Profile, btnChart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        btnChart = findViewById(R.id.btn_Chart);
+
 
         btn_Gallery = findViewById(R.id.btn_Gallery);
         btn_Settings = findViewById(R.id.btn_Settings);
         btn_Profile = findViewById(R.id.btn_Profile);
         btn_Home = findViewById(R.id.btn_Home);
         btn_Info = findViewById(R.id.btn_Info);
+
+        btnChart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "btn_Profile Pressed", Toast.LENGTH_SHORT).show();
+                Intent intentProfile = new Intent(MainActivity.this, PieChartActivity.class);
+                startActivity(intentProfile);
+            }
+        });
+
 
         btn_Gallery.setOnClickListener(new View.OnClickListener() {
             @Override
